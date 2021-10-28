@@ -5,7 +5,7 @@ I made this project based on Spring Boot | Angular | fullstack  web application 
 ![springboot-angular-fullstack](https://user-images.githubusercontent.com/86077654/139099716-8975a4f7-67c3-4d8a-a21b-d202119af096.png)
 
 ## Angular
-![angular](https://user-images.githubusercontent.com/86077654/139188243-cc68ecdc-8dbd-4a35-ad8f-dae56d68884c.png)
+![angular](https://user-images.githubusercontent.com/86077654/139235511-8d694734-7247-4ce4-b0b6-9f67fbfd850f.png)
 
 ## Spring Boot
 ![spring-boot-3-player](https://user-images.githubusercontent.com/86077654/138086348-6cb23128-f9ec-4e20-9f36-0aac9006e7ac.png)
