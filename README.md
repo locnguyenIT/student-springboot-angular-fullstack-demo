@@ -12,6 +12,10 @@ I made this project based on Spring Boot | Angular | fullstack  web application 
 
 ## Run project
 
+To run the project, make sure you have installed
+- MySQL database
+- NodeJS
+
 ![Screenshot 2021-10-28 170156](https://user-images.githubusercontent.com/86077654/139234298-500e4647-5b8c-4dea-bfd6-5d4cc96cc986.png)
 
 First, open project, follow path \src\main\resources\application.properties to configuation application.properties to connect database.
@@ -21,5 +25,7 @@ Make sure you created database "student" and change your username and password w
 Go to DemoApplication and Run. After the program has finished running.
 
 Open browser "http://localhost:8080/api/spring-boot/student"  to see API
+
+Second, open terminal at \src\angular-frontend, run "npm install" to install "node_modules" folder in angular-fontend but make sure you have installed "Node.js" first
 
 
