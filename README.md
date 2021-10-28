@@ -18,14 +18,12 @@ To run the project, make sure you have installed
 
 ![Screenshot 2021-10-28 170156](https://user-images.githubusercontent.com/86077654/139234298-500e4647-5b8c-4dea-bfd6-5d4cc96cc986.png)
 
-First, open project, follow path \src\main\resources\application.properties to configuation application.properties to connect database.
+First, open the project and follow path \src\main\resources\application.properties to configuation application.properties to connect database.
 
-Make sure you created database "student" and change your username and password with your MySQL account, then go to pom.xml file -> Maven -> Reload project.
+Make sure you created database "student" and change username and password with your MySQL account, then go to pom.xml file -> Maven -> Reload project.
 
-Second, open terminal at \src\angular-frontend, run command "npm install" to install node_modules folder. Once done, run the command "ng serve" and open localhost:4200 in your browser and that is for frontend
+Second, open terminal at \src\angular-frontend, then run command "npm install" to install node_modules folder. Once done, run command "ng serve" and open localhost:4200 in your browser to see the frontend
 
-Finally, go to DemoApplication and Run. After the program has finished running.
-
-Open browser "http://localhost:8080/api/spring-boot/student"  to see API of backend
+Finally, go to DemoApplication and Run. After the program has finished running. Open browser "http://localhost:8080/api/spring-boot/student"  to see API of backend
 
 
