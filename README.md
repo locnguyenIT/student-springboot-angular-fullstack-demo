@@ -12,13 +12,11 @@ I made this project based on Spring Boot | Angular | fullstack  web application 
 
 ## Run project
 
-![properties](https://user-images.githubusercontent.com/86077654/137910033-4012bc3d-6e28-406b-8cc9-dfe826c790af.png)
+![Screenshot 2021-10-28 170156](https://user-images.githubusercontent.com/86077654/139234298-500e4647-5b8c-4dea-bfd6-5d4cc96cc986.png)
 
 First, open project, follow path \src\main\resources\application.properties to configuation application.properties to connect database.
 
-Make sure you created database "student" and change your username and password with your MySQL account.
-
-After you created database "student" and change username, password in application.properties, then go to pom.xml file -> Maven -> Reload project.
+Make sure you created database "student" and change your username and password with your MySQL account, then go to pom.xml file -> Maven -> Reload project.
 
 Go to DemoApplication and Run. After the program has finished running.
 
