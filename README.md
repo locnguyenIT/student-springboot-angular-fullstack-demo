@@ -24,7 +24,7 @@ Second, go to DemoApplication and Run. After the program has finished running. O
 
 Finally, open terminal at "\src\angular-frontend", then run command "npm install" to install node_modules folder. Once done, run command "ng serve" then open "http://localhost:4200" in your browser to see the frontend.
 
-Run the backend first, then the frontend later
+Run the backend first, then the frontend later. Good luck
 
 
 
