@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #707070;
 }
-.btn-light-delete{
+.btn btn-danger{
   border: 1px solid black;
 }
 .btn-light-edit{
