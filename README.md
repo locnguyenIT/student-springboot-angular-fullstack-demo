@@ -22,10 +22,10 @@ First, open project, follow path \src\main\resources\application.properties to c
 
 Make sure you created database "student" and change your username and password with your MySQL account, then go to pom.xml file -> Maven -> Reload project.
 
-Go to DemoApplication and Run. After the program has finished running.
+Second, open terminal at \src\angular-frontend, run command "npm install" to install node_modules folder. Once done, run the command "ng serve" and open localhost:4200 in your browser and that is for frontend
 
-Open browser "http://localhost:8080/api/spring-boot/student"  to see API
+Finally, go to DemoApplication and Run. After the program has finished running.
 
-Second, open terminal at \src\angular-frontend, run "npm install" to install "node_modules" folder in angular-fontend but make sure you have installed "Node.js" first
+Open browser "http://localhost:8080/api/spring-boot/student"  to see API of backend
 
 
