@@ -33,6 +33,9 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #707070;
 }
+.table-tr-hover:hover{
+  background-color: Gainsboro;
+}
 .btn btn-danger{
   border: 1px solid black;
 }
