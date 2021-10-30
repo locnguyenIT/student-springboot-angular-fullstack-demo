@@ -16,7 +16,7 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th scope="col">Id</th>
+            <th scope="col">Student Id</th>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Date of birth</th>
@@ -34,10 +34,10 @@
               <!-- Delete Modal -->
               <!-- When user click on Delete button. data student will pass into getInfoStudent in function getStudent and open Delete modal -->
               <!-- data-bs-target attribute must equal to id attribute in modal-->
-              <button (click) = "getStudent(student)" type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteStudentModal">Delete</button>
+              <button (click) = "getStudent(student)" class="btn btn-outline-danger"  data-bs-toggle="modal" data-bs-target="#deleteStudentModal">Delete</button>
               <!-- Edit Modal -->
               <!-- When user click on Edit button. data student will pass into getInfoStudent in function getStudent and open Edit modal -->
-              <button (click) = "getStudent(student)"  type="button" class="btn btn-light-edit" data-bs-toggle="modal" data-bs-target="#editStudentModal">Edit</button>
+              <button (click) = "getStudent(student)" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editStudentModal">Edit</button>
             </td>
           </tr>
         </tbody>

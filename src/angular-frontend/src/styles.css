@@ -36,12 +36,8 @@ a {
 .table-tr-hover:hover{
   background-color: Gainsboro;
 }
-.btn btn-danger{
-  border: 1px solid black;
-}
-.btn-light-edit{
+.btn-outline-primary{
   margin-left: 15px;
-  border: 1px solid black;
 }
 .container{
   padding: 50px;
