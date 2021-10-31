@@ -66,7 +66,7 @@ public class StudentService {
     }
 
     @Transactional
-    public void updateStudent(Integer studentId, String name, String email, LocalDate dob)
+    public void updateStudent(Integer studentId, String name, String email, String gender,LocalDate dob)
     {
         //Check studentId in database
         Student student = studentRepository.findById(studentId).orElseThrow(()
@@ -84,6 +84,10 @@ public class StudentService {
                 throw new IllegalStateException("Email already exist in database");
             }
             student.setEmail(email);
+        }
+        if(gender != null && !Objects.equals(student.getGender(),gender)) //if the new name has been provided is not the same name in database
+        {
+            student.setGender(Gender.valueOf(gender));
         }
         if(dob != null && !Objects.equals(student.getDob(),dob)) //if the new name has been provided is not the same name in database
         {

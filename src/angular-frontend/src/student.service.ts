@@ -26,9 +26,9 @@ export class StudentService{
     return this.http.delete<void>(`${this.apiStudentServer}/student/delete/${studentId}`);
   }
 
-  public updateStudent(studentId: number, name: string, email: string, dob: Date): Observable<Student>
+  public updateStudent(studentId: number, name: string, email: string,gender: string, dob: Date): Observable<Student>
   {
-    const params= new HttpParams().set('name',name).set('email',email).set('dob',dob.toString());
+    const params= new HttpParams().set('name',name).set('email',email).set('gender',gender).set('dob',dob.toString());
     return this.http.put<Student>(`${this.apiStudentServer}/student/update/${studentId}`,params);
   }
 

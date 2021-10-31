@@ -19,6 +19,7 @@
             <th scope="col">Student Id</th>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
+            <th scope="col">Gender</th>
             <th scope="col">Date of birth</th>
             <th scope="col">Action</th>
           </tr>
@@ -29,6 +30,7 @@
             <td>{{student.id}}</td>
             <td>{{student.name}}</td>
             <td>{{student.email}}</td>
+            <td>{{student.gender}}</td>
             <td>{{student.dob}}</td>
             <td>
               <!-- Delete Modal -->
@@ -64,6 +66,14 @@
                   <div class="form-group">
                       <label for="email">Email</label>
                       <input type="email" ngModel name="email" class="form-control" id="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select  ngModel name ="gender" class="form-select" aria-label="Default select example">
+                      <option value="" disabled selected hidden>Choose a gender</option>
+                      <option value="Male" >Male</option>
+                      <option value="Female" >Female</option>
+                    </select>
                   </div>
                   <div class="form-group">
                       <label for="dob">Date of birth</label>
@@ -119,6 +129,14 @@
           <div class="form-group">
               <label for="email">Email</label>
               <input type="email"  ngModel={{email}} name ="email"class="form-control" id="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select  ngModel="{{gender}}" name ="gender" class="form-select" aria-label="Default select example">
+              <option value="" disabled selected hidden>Choose a gender</option>
+              <option value="Male" >Male</option>
+              <option value="Female" >Female</option>
+            </select>
           </div>
           <div class="form-group">
               <label for="dob">Date of birth</label>

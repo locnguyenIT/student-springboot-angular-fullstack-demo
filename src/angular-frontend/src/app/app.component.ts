@@ -16,6 +16,7 @@ export class AppComponent implements OnInit{
   public id!: number;
   public name!: string ;
   public email!: string;
+  public gender!: string;
   public dob!:  Date;
 
   constructor(private studentService: StudentService){}
@@ -43,6 +44,7 @@ export class AppComponent implements OnInit{
     this.id = this.getInfoStudent.id;
     this.name = this.getInfoStudent.name;
     this.email = this.getInfoStudent.email;
+    this.gender = this.getInfoStudent.gender;
     this.dob = this.getInfoStudent.dob;
   }
 
@@ -81,7 +83,7 @@ export class AppComponent implements OnInit{
   public onUpdateStudent(student: Student ): void
   {
     document.getElementById('btn-edit-close')?.click(); //when save student, click close button to shutdown form
-    this.studentService.updateStudent(student.id,student.name,student.email,student.dob).subscribe(
+    this.studentService.updateStudent(student.id,student.name,student.email,student.gender,student.dob).subscribe(
       (response: Student) => {
         console.log(response);
         this.getAllStudent();

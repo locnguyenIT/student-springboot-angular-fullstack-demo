@@ -47,4 +47,10 @@ a {
   border-radius: 30px;
   margin-bottom: 10px;
 }
+.form-select:invalid{
+  color: gray;
+}
+option{
+  color: black;
+}
 

@@ -55,9 +55,10 @@ public class StudentController { //Request API , Response API
     public void updateStudent(@PathVariable("studentId") Integer studentId, //@PathVariable is extract the values (studentID) from the URL
                               @RequestParam(required = false) String name,  //@RequestParam is extract the query parameters from the URL. required = false mean is not required have parameter
                               @RequestParam(required = false) String email,
+                              @RequestParam(required = false) String gender,
                               @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate dob) //@RequestParam is extract the query parameters from the URL. required = false mean is not required have parameter
     {
-        studentService.updateStudent(studentId,name,email,dob);
+        studentService.updateStudent(studentId,name,email,gender,dob);
     }
 
 //    @PutMapping(path = "update/{studentId}") //Update student with studentId

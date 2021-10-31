@@ -13,26 +13,37 @@ public class Student {
     @SequenceGenerator(name = "student_sequence",sequenceName = "student_sequence",allocationSize = 1) //generate sequence with id auto increment begin 1
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_sequence") //use sequence is just defined above
     private int id;
+    @Column(name = "name",nullable = false)
     private String name;
+
+    @Column(name = "email",nullable = false,unique = true)
     private String email;
+
+    @Enumerated(value = EnumType.STRING)
+    @Column(name = "gender",nullable = false)
+    private Gender gender;
+
+    @Column(name = "dob",nullable = false)
     private LocalDate dob;
+
     @Transient //This annotation mean is no need column age in database because age will calculate by dob
     private int age;
 
     public Student() {}
 
-    public Student(int id, String name, String email, LocalDate dob) {
-        this.id = id;
+    public Student(String name, String email, Gender gender, LocalDate dob) {
         this.name = name;
         this.email = email;
+        this.gender = gender;
         this.dob = dob;
     }
 
-    public Student(String name, String email, LocalDate dob) {
-        this.name = name;
-        this.email = email;
-        this.dob = dob;
+    public Gender getGender() {
+        return gender;
+    }
 
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     public int getId() {
@@ -81,6 +92,7 @@ public class Student {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
+                ", gender=" + gender +
                 ", dob=" + dob +
                 ", age=" + age +
                 '}';
