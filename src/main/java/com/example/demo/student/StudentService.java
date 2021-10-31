@@ -65,7 +65,6 @@ public class StudentService {
         studentRepository.deleteById(studentId);
     }
 
-    @Transactional
     public void updateStudent(Integer studentId, String name, String email, String gender,LocalDate dob)
     {
         //Check studentId in database
@@ -93,6 +92,7 @@ public class StudentService {
         {
             student.setDob(dob);
         }
+        studentRepository.save(student);
     }
 
 
