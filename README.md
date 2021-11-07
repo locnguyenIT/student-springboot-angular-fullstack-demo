@@ -24,7 +24,7 @@ Make sure you created database "student" and change username and password with y
 
 Second, go to DemoApplication and Run. After the program has finished running. Open your browser "http://localhost:8080/api/spring-boot/student"  to see API of backend
 
-Finally, open terminal at "\src\frontend", then run command "npm install" to install node_modules folder. Once done, run command "ng serve" then open "http://localhost:4200" in your browser to see the frontend.
+Finally, open terminal at "\src\angular-frontend", then run command "npm install" to install node_modules folder. Once done, run command "ng serve" then open "http://localhost:4200" in your browser to see the frontend.
 
 Run the backend first, then run the frontend later. Good luck
 
