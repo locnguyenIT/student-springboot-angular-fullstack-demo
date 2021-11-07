@@ -1,4 +1,6 @@
 # Student Web Application with Spring Boot | Angular | Fullstack | Demo 
+![student-frontend](https://user-images.githubusercontent.com/86077654/140656251-312feb56-826c-4129-8928-db3de4e2f85c.png)
+
 ## Description
 I made this project based on Spring Boot | Angular | fullstack  web application with Spring Boot on backend and Angular on frontend. Basically, this is just a demo project to understand architecture of Angular, Spring Boot and how they communicate with each other to perform a fullstack web development
 ![springboot-angular-fullstack](https://user-images.githubusercontent.com/86077654/139099716-8975a4f7-67c3-4d8a-a21b-d202119af096.png)
