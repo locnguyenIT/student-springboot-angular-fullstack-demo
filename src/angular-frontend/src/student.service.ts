@@ -7,7 +7,7 @@ import { environment } from "./environments/environment";
 @Injectable({providedIn: 'root'})
 export class StudentService{
 
-  private apiStudentServer = environment.apiStudentURL;
+  private apiStudentServer = 'http://localhost:8080/api/spring-boot' //connect to backend
 
   constructor(private http: HttpClient){}
 
