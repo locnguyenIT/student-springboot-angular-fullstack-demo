@@ -51,7 +51,7 @@
 				<version>3.1.4</version>
 				<configuration>
 					<to>
-						<image>docker.io/ntloc/web-app-fullstack-springboot-angular:latest</image>
+						<image>docker.io/ntloc/fullstack-springboot-angular-demo:latest</image>
 					</to>
 				</configuration>
 			</plugin>
